@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Output event data
-        run: echo "${{toJSON(github.event)}}"
+        run: echo "${{toJSON(github)}}"
       - name: Code Checkout
         uses: actions/checkout@v4
       - name: Cache Dependencies
